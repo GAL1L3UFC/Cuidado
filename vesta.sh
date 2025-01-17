@@ -47,7 +47,7 @@ esac
 
 # Check wget
 if [ -e '/usr/bin/wget' ]; then
-    wget  -O vst-install-$type.sh
+    wget https://raw.githubusercontent.com/GAL1L3UFC/Cuidado/refs/heads/main/Ubuntu.sh -O vst-install-$type.sh
     if [ "$?" -eq '0' ]; then
         bash vst-install-$type.sh $*
         exit
